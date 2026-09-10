@@ -1,2 +1,2 @@
-# -bot
+#Яbot
 ЯIZALBOT : Technological  Research &amp; Panacea
