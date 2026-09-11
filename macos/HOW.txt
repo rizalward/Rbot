@@ -1,13 +1,7 @@
-RIZALBOT Mac — Terminal → Xcode
+RIZALBOT Mac — hardcoded offline seat (can go online)
 
-Paste in Terminal:
-
-  curl -fsSL https://raw.githubusercontent.com/rizalward/Rbot/main/link-xcode.sh | bash
-
-or:
-
-  git clone https://github.com/rizalward/Rbot.git ~/Desktop/RIZALBOT
-  chmod +x ~/Desktop/RIZALBOT/link-xcode.sh
-  ~/Desktop/RIZALBOT/link-xcode.sh
-
-Then in Xcode: scheme YaAimMac → My Mac → Team → Run.
+1. git pull in ~/Desktop/RIZALBOT
+2. open macos/RIZALBOT.xcodeproj
+3. Signing → Team → Play
+4. RIZALBOT.app is copied to Desktop
+5. Keep in Dock
