@@ -145,7 +145,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set +e\nkillall RIZALBOT >/dev/null 2>&1\nDEST=\"$HOME/Desktop/RIZALBOT.app\"\nrm -rf \"$DEST\"\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" \"$DEST\"\n/usr/bin/xattr -cr \"$DEST\"\necho \"Installed $DEST\"\nexit 0\n";
+			shellScript = "set +e\nkillall RIZALBOT >/dev/null 2>&1\nsleep 0.2\nDEST=\"$HOME/Desktop/RIZALBOT.app\"\nrm -rf \"$DEST\"\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" \"$DEST\"\nrm -f \"$DEST/Contents/MacOS/\"*.debug.dylib \"$DEST/Contents/Frameworks/\"*.debug.dylib\n/usr/bin/xattr -cr \"$DEST\"\necho \"Installed $DEST\"\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -204,7 +204,8 @@
 				CODE_SIGN_ENTITLEMENTS = RIZALBOT/RIZALBOT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
+				ENABLE_DEBUG_DYLIB = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -230,7 +231,8 @@
 				CODE_SIGN_ENTITLEMENTS = RIZALBOT/RIZALBOT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
+				ENABLE_DEBUG_DYLIB = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
