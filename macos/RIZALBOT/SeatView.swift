@@ -11,7 +11,7 @@ struct SeatView: View {
     var body: some View {
         SeatWebView()
             .background(Color.black)
-            .navigationTitle("RIZALBOT")
+            .navigationTitle("PROJECT Я")
     }
 }
 
