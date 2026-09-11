@@ -145,7 +145,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set +e\nkillall RIZALBOT >/dev/null 2>&1\nsleep 0.2\nDEST=\"$HOME/Desktop/RIZALBOT.app\"\nrm -rf \"$DEST\"\ncp -R \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\" \"$DEST\"\nrm -f \"$DEST/Contents/MacOS/\"*.debug.dylib \"$DEST/Contents/Frameworks/\"*.debug.dylib\n/usr/bin/xattr -cr \"$DEST\"\necho \"Installed $DEST\"\nexit 0\n";
+			shellScript = "sh \"$SRCROOT/InstallTiles.sh\"\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
