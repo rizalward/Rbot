@@ -11,7 +11,9 @@ Thunderbird
 Creator **ЯIZAL** · Rizal Institute · UTAH  
 This is the project page. Account: https://github.com/rizalward
 
-**Handoff (where it is):** [HANDOFF.md](HANDOFF.md) — eat this, write a return packet.
+**Same page (everybody):** [SAME-PAGE.md](SAME-PAGE.md)
+
+**Handoff twins:** [handoff/](handoff/)
 
 ## TAGIN
 
