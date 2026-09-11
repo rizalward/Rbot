@@ -44,6 +44,7 @@ final class SeatHandler: NSObject, WKURLSchemeHandler {
             case "png": mime = "image/png"
             case "jpg", "jpeg": mime = "image/jpeg"
             case "svg": mime = "image/svg+xml"
+            case "mp4": mime = "video/mp4"
             default:
                 mime = UTType(filenameExtension: ext)?.preferredMIMEType ?? "application/octet-stream"
             }
