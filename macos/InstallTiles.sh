@@ -1,40 +1,48 @@
 #!/bin/sh
-# Replace Desktop + Applications + Dock tiles with this build. Same paths every time.
+# Real app lives in /Applications. Desktop + Dock tiles point at that path.
+# iCloud Desktop eats signed .app bundles (no +x, no _CodeSignature) — never plant there.
 set +e
 APP="${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}"
 if [ ! -d "$APP" ]; then
   APP=$(ls -dt "$HOME/Library/Developer/Xcode/DerivedData/RIZALBOT-"*/Build/Products/Debug/RIZALBOT.app 2>/dev/null | head -1)
 fi
 if [ ! -d "$APP" ]; then
-  echo "No RIZALBOT.app to install. Press Play in Xcode first."
+  echo "No RIZALBOT.app. Press Play in Xcode first."
   exit 0
 fi
 
 /usr/bin/killall RIZALBOT >/dev/null 2>&1
 sleep 0.2
 
-plant() {
-  DEST="$1"
-  /bin/rm -rf "$DEST"
-  /bin/cp -R "$APP" "$DEST"
-  /bin/rm -f "$DEST/Contents/MacOS/"*.debug.dylib "$DEST/Contents/Frameworks/"*.debug.dylib 2>/dev/null
-  /usr/bin/xattr -cr "$DEST" 2>/dev/null
-  /usr/bin/touch "$DEST"
-}
+DEST="/Applications/RIZALBOT.app"
+/bin/rm -rf "$DEST"
+/bin/cp -R "$APP" "$DEST"
+/bin/chmod 755 "$DEST/Contents/MacOS/RIZALBOT" 2>/dev/null
+/bin/rm -f "$DEST/Contents/MacOS/"*.debug.dylib "$DEST/Contents/Frameworks/"*.debug.dylib 2>/dev/null
+/usr/bin/xattr -d com.apple.quarantine "$DEST" 2>/dev/null
+/usr/bin/xattr -dr com.apple.quarantine "$DEST" 2>/dev/null
 
-plant "$HOME/Desktop/RIZALBOT.app"
-plant "/Applications/RIZALBOT.app"
+# Desktop: drop any broken .app, put an alias so the stormling still sits on the desk
+/bin/rm -rf "$HOME/Desktop/RIZALBOT.app"
+/usr/bin/osascript <<'APPLESCRIPT' >/dev/null 2>&1
+tell application "Finder"
+  set desk to path to desktop folder
+  try
+    delete (every item of desk whose name is "RIZALBOT" and class is alias file)
+  end try
+  try
+    delete (every item of desk whose name is "RIZALBOT.app")
+  end try
+  make alias file to POSIX file "/Applications/RIZALBOT.app" at desk with properties {name:"RIZALBOT"}
+end tell
+APPLESCRIPT
 
 LS=/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister
-[ -x "$LS" ] && "$LS" -f "$HOME/Desktop/RIZALBOT.app" "/Applications/RIZALBOT.app" >/dev/null 2>&1
+[ -x "$LS" ] && "$LS" -f "$DEST" >/dev/null 2>&1
 
 /usr/bin/python3 - <<'PY'
 import os, plistlib, subprocess, tempfile
-from pathlib import Path
-
-url = (Path.home() / "Desktop" / "RIZALBOT.app").as_uri()
-if not url.endswith("/"):
-    url += "/"
+url = "file:///Applications/RIZALBOT.app/"
 try:
     raw = subprocess.check_output(["defaults", "export", "com.apple.dock", "-"])
     data = plistlib.loads(raw)
@@ -47,8 +55,7 @@ def is_rizal(tile):
     bid = str(td.get("bundle-identifier") or "")
     fd = td.get("file-data") or {}
     u = str(fd.get("_CFURLString") or "")
-    blob = " ".join([label, bid, u]).lower()
-    return "rizalbot" in blob
+    return "rizalbot" in " ".join([label, bid, u]).lower()
 
 kept = [t for t in data.get("persistent-apps", []) if not is_rizal(t)]
 kept.append({
@@ -69,5 +76,5 @@ os.unlink(path)
 PY
 
 /usr/bin/killall Dock >/dev/null 2>&1
-echo "Tiles updated: Desktop + Applications + Dock"
+echo "Seated /Applications/RIZALBOT.app — Desktop alias + Dock tile replaced"
 exit 0
