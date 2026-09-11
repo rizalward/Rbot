@@ -16,8 +16,6 @@ DEST="/Applications/RIZALBOT.app"
 BIN="$DEST/Contents/MacOS/RIZALBOT"
 
 plant() {
-  /usr/bin/killall RIZALBOT >/dev/null 2>&1
-  sleep 0.2
   /bin/rm -rf "$DEST"
   /usr/bin/ditto "$APP" "$DEST"
   /bin/chmod 755 "$BIN" 2>/dev/null
@@ -25,7 +23,6 @@ plant() {
   /usr/bin/xattr -dr com.apple.quarantine "$DEST" 2>/dev/null
   /usr/bin/touch "$DEST"
 
-  # Desktop: kill real .app (iCloud poison). Keep the git folder. Alias only.
   /bin/rm -rf "$HOME/Desktop/RIZALBOT.app"
   /usr/bin/osascript >/dev/null 2>&1 <<'APPLESCRIPT'
 tell application "Finder"
@@ -49,10 +46,10 @@ APPLESCRIPT
 plant
 echo "Seated $DEST"
 
-# Xcode then launches DerivedData and steals the Dock. Re-pin after that.
+# Re-pin only. Do not killall RIZALBOT — that SIGTERMs Xcode's debugger.
 (
   sleep 8
-  plant
-  /usr/bin/open "$DEST"
+  /usr/bin/python3 "$HERE/pin-dock.py"
+  /usr/bin/killall Dock >/dev/null 2>&1
 ) >/tmp/rizal-tiles.log 2>&1 &
 exit 0
