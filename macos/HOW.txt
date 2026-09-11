@@ -1,0 +1,6 @@
+RIZALBOT Mac — Xcode (signed Dock app)
+
+1. git clone https://github.com/rizalward/Rbot.git ~/Desktop/RIZALBOT
+2. xattr -cr ~/Desktop/RIZALBOT
+3. open -a Xcode ~/Desktop/RIZALBOT/macos/RIZALBOT.xcodeproj
+4. Signing & Capabilities → Team → your Apple ID → Run
