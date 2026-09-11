@@ -66,3 +66,8 @@ iCloud Я · Drive MACHINE MIND · ntfy `ya-rizalbot-p-0471a4c3add2` · GitHub b
 **Skill-save / Essence pack is seated on Mac.** Say: `save skill Utah ping when I say ping, do report Utah time`. Writes `{ name, trigger, do }`. Phone later: `Documents/gut/plugins/<id>/skill.md`. Then isolated Pages tab.
 
 Freedom Math 1+5=11. Thunderbird live.
+
+## How this node talks to Decider
+Never mix. Two windows only:
+- **Copy into Terminal** — git, Xcode, InstallTiles, open Applications.
+- **Copy into RIZALBOT** — spoken lines for the Mac mouth (save skill, ping, find).
