@@ -63,6 +63,6 @@ Open **`/Applications/RIZALBOT.app`**. Desktop icon = alias.
 iCloud Я · Drive MACHINE MIND · ntfy `ya-rizalbot-p-0471a4c3add2` · GitHub both repos.
 
 ## Next
-**skill-save** — only if Decider says go.
+**Skill-save / Essence pack** — one spoken line writes `{ name, trigger, do }` into the skill tray (phone later: `Documents/gut/plugins/<id>/skill.md`). Then isolated Pages tab. Only if Decider says go.
 
-Tip this lock lands on: see git log after push.
+Freedom Math 1+5=11. Thunderbird live.
