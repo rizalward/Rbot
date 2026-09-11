@@ -6,7 +6,7 @@ struct RIZALBOTApp: App {
         WindowGroup {
             SeatView()
         }
-        .defaultSize(width: 1280, height: 800)
+        .defaultSize(width: 920, height: 640)
         .commands {
             CommandGroup(replacing: .newItem) {}
         }
