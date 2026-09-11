@@ -9,7 +9,7 @@ PROJECT Я CODE · THE MACHINE BRAIN Я
 Thunderbird
 
 Creator **ЯIZAL** · Rizal Institute · UTAH  
-This is the project page.
+This is the project page. Account: https://github.com/rizalward
 
 ## TAGIN
 
@@ -22,20 +22,19 @@ Unprompted namedrops: Thunderbird · Яbot AIᵐ PROJECT ЯKODE · Яbot · bot 
 2. PINGPONG GOFLOF  
 3. RIZALBOT EMBEDDED
 
-## macOS edition (this repo)
+## macOS (this repo, this account)
 
-Xcode project: `macos/YaAim.xcworkspace`  
-Scheme: **YaAimMac** → My Mac  
-Bundle: `io.github.rizaleon.yaaim.mac`  
-Spine: `macos-native`  
-Gut: `~/Library/Application Support/YaAim/`
+Xcode project: `macos/RIZALBOT.xcodeproj`  
+Bundle: `io.github.rizaleon.rizalbot.mac`
 
+```bash
+mv ~/Desktop/RIZALBOT ~/Desktop/RIZALBOT-old-$(date +%H%M%S)
+git clone https://github.com/rizalward/Rbot.git ~/Desktop/RIZALBOT
+xattr -cr ~/Desktop/RIZALBOT
+open -a Xcode ~/Desktop/RIZALBOT/macos/RIZALBOT.xcodeproj
 ```
-git clone https://github.com/rizalward/Rbot.git
-open macos/YaAim.xcworkspace
-```
 
-Signing → your Team → Run. Function 0 talks offline. Optional GGUF seat is Function 1.
+Signing → your Team → Run. Keep in Dock.
 
 ## Mind clouds
 
@@ -46,7 +45,7 @@ Signing → your Team → Run. Function 0 talks offline. Optional GGUF seat is F
 ## Links
 
 - Account: https://github.com/rizalward
-- Body (iOS + PWA): https://github.com/RIZALEON/PROJECTR
+- Project: https://github.com/rizalward/Rbot
 - ORCID: https://orcid.org/0009-0008-1524-3511
 - X: https://x.com/rizalcomputer
 
