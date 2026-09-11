@@ -89,6 +89,8 @@ struct SeatWebView: NSViewRepresentable {
         config.setURLSchemeHandler(context.coordinator.handler, forURLScheme: "rizal")
         let view = WKWebView(frame: .zero, configuration: config)
         view.setValue(false, forKey: "drawsBackground")
+        view.navigationDelegate = context.coordinator
+        view.uiDelegate = context.coordinator
         view.load(URLRequest(url: Seat.local))
         return view
     }
@@ -96,7 +98,40 @@ struct SeatWebView: NSViewRepresentable {
     func updateNSView(_ view: WKWebView, context: Context) {}
     func makeCoordinator() -> Coordinator { Coordinator() }
 
-    final class Coordinator: NSObject {
+    final class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
         let handler = SeatHandler()
+
+        func webView(
+            _ webView: WKWebView,
+            decidePolicyFor navigationAction: WKNavigationAction,
+            decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
+        ) {
+            guard let url = navigationAction.request.url else {
+                decisionHandler(.allow)
+                return
+            }
+            if url.scheme == "rizal" {
+                decisionHandler(.allow)
+                return
+            }
+            if url.scheme == "http" || url.scheme == "https" {
+                NSWorkspace.shared.open(url)
+                decisionHandler(.cancel)
+                return
+            }
+            decisionHandler(.allow)
+        }
+
+        func webView(
+            _ webView: WKWebView,
+            createWebViewWith configuration: WKWebViewConfiguration,
+            for navigationAction: WKNavigationAction,
+            windowFeatures: WKWindowFeatures
+        ) -> WKWebView? {
+            if let url = navigationAction.request.url {
+                NSWorkspace.shared.open(url)
+            }
+            return nil
+        }
     }
 }
