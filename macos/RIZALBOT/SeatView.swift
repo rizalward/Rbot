@@ -3,7 +3,7 @@ import SwiftUI
 import WebKit
 
 enum Seat {
-    static let defaultURL = "https://grok.com/project/8545e1c4-63e4-435d-b00a-47803af62fb7"
+    static let defaultURL = "https://grok.com/project/6ca3b685-f773-4747-b54c-d9c47fdc15e4"
     static let key = "seatURL"
 
     static var url: URL {
