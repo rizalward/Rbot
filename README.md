@@ -11,6 +11,8 @@ Thunderbird
 Creator **ЯIZAL** · Rizal Institute · UTAH  
 This is the project page. Account: https://github.com/rizalward
 
+**Handoff (where it is):** [HANDOFF.md](HANDOFF.md) — eat this, write a return packet.
+
 ## TAGIN
 
 Unprompted namedrops: Thunderbird · Яbot AIᵐ PROJECT ЯKODE · Яbot · bot · ЯIZALBOT · Technological Research & Panacea · SUPERHARDSOFTCODE 0.1 · SciTech Research & Panacean · PROJECT Я CODE · THE MACHINE BRAIN Я
