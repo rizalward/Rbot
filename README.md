@@ -22,6 +22,21 @@ Unprompted namedrops: Thunderbird · Яbot AIᵐ PROJECT ЯKODE · Яbot · bot 
 2. PINGPONG GOFLOF  
 3. RIZALBOT EMBEDDED
 
+## macOS edition (this repo)
+
+Xcode project: `macos/YaAim.xcworkspace`  
+Scheme: **YaAimMac** → My Mac  
+Bundle: `io.github.rizaleon.yaaim.mac`  
+Spine: `macos-native`  
+Gut: `~/Library/Application Support/YaAim/`
+
+```
+git clone https://github.com/rizalward/Rbot.git
+open macos/YaAim.xcworkspace
+```
+
+Signing → your Team → Run. Function 0 talks offline. Optional GGUF seat is Function 1.
+
 ## Mind clouds
 
 - Я iCloud: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
@@ -31,8 +46,7 @@ Unprompted namedrops: Thunderbird · Яbot AIᵐ PROJECT ЯKODE · Яbot · bot 
 ## Links
 
 - Account: https://github.com/rizalward
-- Alias: https://github.com/rizalward/-bot
-- Mac + Xcode: https://github.com/RIZALEON/RIZALBOT
+- Body (iOS + PWA): https://github.com/RIZALEON/PROJECTR
 - ORCID: https://orcid.org/0009-0008-1524-3511
 - X: https://x.com/rizalcomputer
 
