@@ -55,6 +55,7 @@ final class SeatHandler: NSObject, WKURLSchemeHandler {
                     "Content-Type": mime,
                     "Content-Length": String(data.count),
                     "Cache-Control": "no-cache",
+                    "Access-Control-Allow-Origin": "*",
                 ]
             )!
             task.didReceive(response)
