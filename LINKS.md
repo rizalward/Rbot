@@ -14,6 +14,11 @@ Do not merge these repos without Decider. Handoff is Essence JSON `{name, trigge
 - Phone repo: https://github.com/RIZALEON/PROJECTR
 - Account ЯIZAL: https://github.com/rizalward
 - Account Я AIᵐ: https://github.com/RIZALEON
+- Drive ONLINE-MIND: https://docs.google.com/document/d/1Thji06t2cjSCvzWgtI-GIHSRywNP7BmVEegaFsfgfXE/edit
+
+## Auto-sync (git hooks, not a ping)
+
+Versioned in `hooks/`. Seat with `sh hooks/install.sh`. Copies mailbox to the twin clone + `~/Documents/Я/` on merge/commit/checkout. Blocks GGUF on push. Does not merge trees. Airplane-safe. `RIZAL_AUTOSYNC=0` disables.
 
 ## Law
 
