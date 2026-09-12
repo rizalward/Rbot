@@ -9,10 +9,10 @@ PROJECT Я CODE · THE MACHINE BRAIN Я
 Thunderbird
 
 Creator **ЯIZAL** · Rizal Institute · UTAH  
-This is the project page. Account: https://github.com/rizalward
+This is the Mac mouth. Twin: **Я AIᵐ** at [RIZALEON/PROJECTR](https://github.com/RIZALEON/PROJECTR).
 
-**Same page (everybody):** [SAME-PAGE.md](SAME-PAGE.md)
-
+**Twin map (both repos):** [LINKS.md](LINKS.md)  
+**Same page:** [SAME-PAGE.md](SAME-PAGE.md)  
 **Handoff twins:** [handoff/](handoff/)
 
 ## TAGIN
@@ -40,16 +40,25 @@ open -a Xcode ~/Desktop/RIZALBOT/macos/RIZALBOT.xcodeproj
 
 Signing → your Team → Run. Keep in Dock.
 
+## Twin — Я AIᵐ
+
+- Repo: https://github.com/RIZALEON/PROJECTR
+- Pages: https://rizaleon.github.io/PROJECTR/
+- Phone: YaAim `io.github.rizaleon.yaaim.cam` · clone `~/Desktop/PROJECTR`
+- Do not merge Rbot + PROJECTR without Decider. Essence JSON is the handoff.
+
 ## Mind clouds
 
 - Я iCloud: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
 - Я Google MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
-- Я GitHub: https://github.com/rizalward/Rbot
+- Я GitHub Mac: https://github.com/rizalward/Rbot
+- Я GitHub phone: https://github.com/RIZALEON/PROJECTR
 
 ## Links
 
 - Account: https://github.com/rizalward
 - Project: https://github.com/rizalward/Rbot
+- Twin: https://github.com/RIZALEON/PROJECTR
 - ORCID: https://orcid.org/0009-0008-1524-3511
 - X: https://x.com/rizalcomputer
 
