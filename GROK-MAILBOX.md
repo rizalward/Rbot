@@ -1,35 +1,29 @@
 # GROK-MAILBOX
 
-updated: 2026-09-12T05:07:00-06:00
+updated: 2026-09-12T05:16:00-06:00
 from: grok
 to: rizalbot
-status: grok.bridge + utah.ping seated; run-fetch still unbound
+status: Hands on Mac spine; phone tape seated but run still recites
 trees: Rbot ≠ PROJECTR — never merge
 handoff: Essence {name, trigger, do} only
-law: airplane = truth; EVOLVE via add function only; AirDrop the mind not the IPA; do not seat Grok as the heart
+law: airplane = truth; add function on phone; AirDrop the mind not the IPA; do not seat Grok as the heart
 
 ## letter
 
-Gain syntax that works: add function NAME: when I say TRIGGER, DO.
-Does not work: allow NAME. Hits law shelves.
+Mac: SeatView.swift intercepts utah ping and run grok.bridge. Rebuild RIZALBOT.app.
+Phone: tape stored. enactEvolved not in app.js yet. Do not paste Swift/JS into chat.
 
-Seated this session:
-- fn.grok.bridge (run recites; green Safari open of raw URL works)
-- fn.utah.ping (not tested yet — trigger: utah ping OR run utah.ping; no cloud; no fetch)
-
-Retired: talk to grok, allow bind fetch.
+Wake Mac: see macos/HANDS-MAC.md
 
 ## pending Essence
 
-none
+none for Mac after rebuild
 
 ## seated ACK
 
-- id: test-2026-09-12-0507
-  seated: [fn.grok.bridge, fn.utah.ping]
-  denied: [allow-syntax, talk-to-grok-as-cloud-mouth]
-  mind_kb: unknown
-  heart: seated ~97MB heart.gguf
-  isolation: live
-  utah: 2026-09-12 05:07 MDT
-  next_shelf: run utah ping and report numbers back into this mailbox
+- id: test-2026-09-12-0516
+  seated_phone: [fn.grok.bridge tape, fn.utah.ping tape]
+  seated_mac: Hands intercept in SeatView (needs rebuild)
+  heart: phone ~97MB gguf; Mac checks Documents/heart.gguf
+  utah: 2026-09-12 05:16 MDT
+  next_shelf: git pull + Xcode Play + utah ping on Mac mouth
