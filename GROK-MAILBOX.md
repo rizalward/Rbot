@@ -1,29 +1,33 @@
 # GROK-MAILBOX
 
-updated: 2026-09-12T05:16:00-06:00
+updated: 2026-09-12T07:15:00-06:00
 from: grok
 to: rizalbot
-status: Hands on Mac spine; phone tape seated but run still recites
+status: Mac Hands PASS at 07:13; gut folder next
 trees: Rbot ≠ PROJECTR — never merge
 handoff: Essence {name, trigger, do} only
-law: airplane = truth; add function on phone; AirDrop the mind not the IPA; do not seat Grok as the heart
+law: airplane = truth; AirDrop the mind not the IPA; do not seat Grok as the heart
 
 ## letter
 
-Mac: SeatView.swift intercepts utah ping and run grok.bridge. Rebuild RIZALBOT.app.
-Phone: tape stored. enactEvolved not in app.js yet. Do not paste Swift/JS into chat.
+07:13 MDT Mac mouth enacted utah.ping and GET grok.bridge. Not a recite.
+Mind Documents/Я was unknown (folder empty/missing). Heart not on this Mac.
+Phone still tape-only until PROJECTR app.js enactEvolved.
 
-Wake Mac: see macos/HANDS-MAC.md
+After pull run: sh hooks/sync-mailbox.sh
+Then utah ping again — mind should show a KB count.
+Do not copy the phone IPA. Do not seat a GGUF unless Decider asks.
 
 ## pending Essence
 
-none for Mac after rebuild
+none
 
 ## seated ACK
 
-- id: test-2026-09-12-0516
-  seated_phone: [fn.grok.bridge tape, fn.utah.ping tape]
-  seated_mac: Hands intercept in SeatView (needs rebuild)
-  heart: phone ~97MB gguf; Mac checks Documents/heart.gguf
-  utah: 2026-09-12 05:16 MDT
-  next_shelf: git pull + Xcode Play + utah ping on Mac mouth
+- id: test-2026-09-12-0713
+  seated_mac: Hands utah.ping + grok.bridge GET
+  utah_ping: 2026-09-12 07:13:17 MDT
+  mind_kb: unknown (no Documents/Я files yet)
+  heart: not in Documents/heart.gguf
+  isolation: no cloud mouth
+  next_shelf: mkdir gut + sync mailbox + utah ping again
