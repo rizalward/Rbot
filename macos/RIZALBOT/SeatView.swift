@@ -5,6 +5,8 @@ import WebKit
 
 enum Seat {
     static let local = URL(string: "rizal://seat/mac.html")!
+    static let onlineMind = URL(string: "https://raw.githubusercontent.com/rizalward/Rbot/main/handoff/ONLINE-MIND.md")!
+    static let onlineMindTwin = URL(string: "https://raw.githubusercontent.com/RIZALEON/PROJECTR/main/handoff/ONLINE-MIND.md")!
 }
 
 struct SeatView: View {
@@ -87,11 +89,15 @@ struct SeatWebView: NSViewRepresentable {
     func makeNSView(context: Context) -> WKWebView {
         let config = WKWebViewConfiguration()
         config.preferences.isElementFullscreenEnabled = true
+        config.userContentController.add(context.coordinator, name: "om")
+        let intercept = WKUserScript(source: Self.interceptJS, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        config.userContentController.addUserScript(intercept)
         config.setURLSchemeHandler(context.coordinator.handler, forURLScheme: "rizal")
         let view = WKWebView(frame: .zero, configuration: config)
         view.setValue(false, forKey: "drawsBackground")
         view.navigationDelegate = context.coordinator
         view.uiDelegate = context.coordinator
+        context.coordinator.webView = view
         view.load(URLRequest(url: Seat.local))
         return view
     }
@@ -99,8 +105,70 @@ struct SeatWebView: NSViewRepresentable {
     func updateNSView(_ view: WKWebView, context: Context) {}
     func makeCoordinator() -> Coordinator { Coordinator() }
 
-    final class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
+    static let interceptJS = """
+    (function(){
+      document.addEventListener('submit', function(e){
+        var form = e.target;
+        if (!form || !form.querySelector) return;
+        var input = form.querySelector('input:not([type=file])');
+        if (!input) return;
+        var t = String(input.value || '').trim();
+        if (!/^(read )?online[- ]?mind\\b/i.test(t) && !/ONLINE-MIND/i.test(t) && t.indexOf('1Thji06t2cjSCvzWgtI-GIHSRywNP7BmVEegaFsfgfXE') < 0) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.om) {
+          window.webkit.messageHandlers.om.postMessage(t);
+        }
+      }, true);
+      window.__rizalOm = function(text){
+        var host = document.querySelector('.overflow-y-auto') || document.body;
+        var d = document.createElement('div');
+        d.setAttribute('data-om','1');
+        d.style.cssText = 'max-width:92%;white-space:pre-wrap;font-size:15px;line-height:1.625;padding:8px 0;color:#e8e6dc';
+        d.textContent = text;
+        host.appendChild(d);
+        d.scrollIntoView({block:'end'});
+      };
+    })();
+    """
+
+    final class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
         let handler = SeatHandler()
+        weak var webView: WKWebView?
+
+        func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            guard message.name == "om" else { return }
+            Task { await self.fetchMind() }
+        }
+
+        private func fetchMind() async {
+            let urls = [Seat.onlineMind, Seat.onlineMindTwin]
+            var body = "Airplane or unreachable. Gut only. Function 0 still talks."
+            for url in urls {
+                do {
+                    var req = URLRequest(url: url)
+                    req.cachePolicy = .reloadIgnoringLocalCacheData
+                    req.timeoutInterval = 12
+                    let (data, resp) = try await URLSession.shared.data(for: req)
+                    let code = (resp as? HTTPURLResponse)?.statusCode ?? 0
+                    if (200 ..< 300).contains(code), let text = String(data: data, encoding: .utf8), text.count > 20 {
+                        let clip = text.count > 4000 ? String(text.prefix(4000)) + "\n…" : text
+                        body = "Online mind read (green). Chief lines kept.\n\n" + clip + "\n\nNo EVOLVE this fetch. Talk only."
+                        break
+                    }
+                } catch {
+                    continue
+                }
+            }
+            let payload = body
+                .replacingOccurrences(of: "\\", with: "\\\\")
+                .replacingOccurrences(of: "`", with: "\\`")
+                .replacingOccurrences(of: "$", with: "\\$")
+            let js = "window.__rizalOm && window.__rizalOm(`\(payload)`)"
+            await MainActor.run {
+                self.webView?.evaluateJavaScript(js, completionHandler: nil)
+            }
+        }
 
         func webView(
             _ webView: WKWebView,
