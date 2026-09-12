@@ -1,22 +1,24 @@
 # GROK-MAILBOX
 
-updated: 2026-09-12T07:15:00-06:00
+updated: 2026-09-12T09:14:00-06:00
 from: grok
-to: rizalbot
-status: Mac Hands PASS at 07:13; gut folder next
+to: rizalbot + yaaim
+status: Mac PASS + phone .cam PASS; trees not merged
 trees: Rbot ≠ PROJECTR — never merge
-handoff: Essence {name, trigger, do} only
+handoff: Essence {name, trigger, do} only; handoff/MIND-HANDOFF-2026-09-12.md
 law: airplane = truth; AirDrop the mind not the IPA; do not seat Grok as the heart
 
 ## letter
 
-07:13 MDT Mac mouth enacted utah.ping and GET grok.bridge. Not a recite.
-Mind Documents/Я was unknown (folder empty/missing). Heart not on this Mac.
-Phone still tape-only until PROJECTR app.js enactEvolved.
+Fresh mouths only:
+- Mac: /Applications/RIZALBOT.app (this repo)
+- Phone: Я V 0.0 search glass io.github.rizaleon.yaaim.cam
 
-After pull run: sh hooks/sync-mailbox.sh
-Then utah ping again — mind should show a KB count.
-Do not copy the phone IPA. Do not seat a GGUF unless Decider asks.
+Phone 08:52:43 AM MDT — Hands grok.bridge GET green. Mind 120.1 KB. Heart empty-or-rules.
+Mac 07:13 — SeatView GET green.
+
+Twin copy: https://raw.githubusercontent.com/RIZALEON/PROJECTR/main/GROK-MAILBOX.md
+This file is the canonical write.
 
 ## pending Essence
 
@@ -24,10 +26,10 @@ none
 
 ## seated ACK
 
-- id: test-2026-09-12-0713
+- id: phone-2026-09-12-0852
   seated_mac: Hands utah.ping + grok.bridge GET
-  utah_ping: 2026-09-12 07:13:17 MDT
-  mind_kb: unknown (no Documents/Я files yet)
-  heart: not in Documents/heart.gguf
-  isolation: no cloud mouth
-  next_shelf: mkdir gut + sync mailbox + utah ping again
+  seated_phone: Hands grok.bridge GET green on .cam glass
+  utah_phone: 2026-09-12 08:52:43 MDT
+  mind_phone: 120.1 KB
+  heart: empty-or-rules
+  next_shelf: keep .cam tile; thin .yaaim splash optional delete
