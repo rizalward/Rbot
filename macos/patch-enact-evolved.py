@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hands: enactEvolved into PROJECTR app.js. Run on the Mac clone. Decider greenlight."""
+"""Hands: enactEvolved into PROJECTR app.js. Run on ~/Desktop/PROJECTR. Decider greenlight."""
 from pathlib import Path
 import sys
 
@@ -26,7 +26,7 @@ OLD_MATCH = '''function matchEvolved(userText) {
   return null;
 }'''
 
-NEW_MATCH = r'''function enactEvolved(skill, userText) {
+NEW_MATCH = r'''async function enactEvolved(skill, userText) {
   const tape = String(skill.action || "");
   const green = !!state.mindOnline;
   const hasTape = /UTAH|MIND|HEART|LIGHT|PENDING|KEEP|OPEN|GET|ACK/.test(tape);
@@ -50,7 +50,14 @@ NEW_MATCH = r'''function enactEvolved(skill, userText) {
     else if (/^ACK/i.test(v)) out.push("ACK { seated: " + skill.name + ", mind: " + mind + ", heart: " + heart + ", utah: " + utah + " }");
     else if (/^OPEN|^GET/i.test(v)) {
       if (!green) out.push("GET/OPEN skipped — amber. Airplane is truth.");
-      else out.push("GREEN_FETCH " + MAIL);
+      else if (typeof fetchTextLoose === "function") {
+        const raw = await fetchTextLoose(MAIL + "?t=" + Date.now());
+        if (raw && raw.length > 20) {
+          const clip = raw.length > 1800 ? raw.slice(0, 1800) + "\n…" : raw;
+          remember("Mailbox GET " + utah);
+          out.push("Hands grok.bridge GET (green). Grok lines kept.\n\n" + clip);
+        } else out.push("GET failed. Gut only.");
+      } else out.push("GREEN_FETCH " + MAIL);
     }
   }
   remember("Used evolved function " + skill.name);
@@ -78,7 +85,7 @@ OLD_HOOK = '''  const evolvedHit = matchEvolved(userText);
   }'''
 
 NEW_HOOK = '''  const evolvedHit = matchEvolved(userText);
-  if (evolvedHit) return enactEvolved(evolvedHit, userText);'''
+  if (evolvedHit) return await enactEvolved(evolvedHit, userText);'''
 
 if OLD_MATCH not in src:
     sys.exit("matchEvolved block not found — app.js moved. Open the file and patch by hand.")
