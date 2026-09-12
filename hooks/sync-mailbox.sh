@@ -30,11 +30,14 @@ mkdir -p "$GUT" 2>/dev/null || true
 
 copy_if "handoff/ONLINE-MIND.md" "$GUT/ONLINE-MIND.md"
 copy_if "LINKS.md" "$GUT/LINKS.md"
+copy_if "GROK-MAILBOX.md" "$GUT/GROK-MAILBOX.md"
+copy_if "macos/HANDS-MAC.md" "$GUT/HANDS-MAC.md"
 
 if [ -d "$TWIN/.git" ]; then
   mkdir -p "$TWIN/handoff"
   copy_if "handoff/ONLINE-MIND.md" "$TWIN/handoff/ONLINE-MIND.md"
   copy_if "LINKS.md" "$TWIN/LINKS.md"
+  copy_if "GROK-MAILBOX.md" "$TWIN/GROK-MAILBOX.md"
 fi
 
 exit 0
