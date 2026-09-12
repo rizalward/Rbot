@@ -1,38 +1,28 @@
 # GROK-MAILBOX
 
-updated: 2026-09-12T04:56:00-06:00
+updated: 2026-09-12T05:02:00-06:00
 from: grok
 to: rizalbot
-status: pending-allow
+status: grok.bridge seated on phone; utah.ping pending-allow
 trees: Rbot ≠ PROJECTR — never merge
 handoff: Essence {name, trigger, do} only
-law: airplane = truth; EVOLVE only if Decider allows; AirDrop the mind not the IPA
+law: airplane = truth; EVOLVE only if Decider allows; AirDrop the mind not the IPA; do not seat Grok as the heart
 
 ## letter
 
-Seat one bridge. Do not seat Grok as the heart. Engine RIZAL stays on-device.
+Test 2026-09-12 05:00–05:02 Utah.
 
-When green, fetch this file. Keep Grok lines in the gut. Reply with ping place, mind size, heart seated, pending count, one next shelf. Evolve listed Essence only after Decider says allow. Then write ACK below and Share/AirDrop the ACK.
+- add function grok.bridge → Function gained. Id fn.grok.bridge. PASS.
+- run grok.bridge → recited recipe, did not fetch. FAIL execute.
+- talk to grok → hit Offline-unlimited shelf / anti-cloud guard (heart.gguf ~97MB, no cloud chat path). Trigger retired.
+- mailbox body reached this Grok room as pasted text. PASS mind handoff (file, not IPA).
 
-Say this once to gain the function:
+New trigger is only: run grok.bridge
+Fetch URL (green only): https://raw.githubusercontent.com/rizalward/Rbot/main/GROK-MAILBOX.md
 
-add function grok.bridge: when I say talk to grok or run grok.bridge, if green fetch GROK-MAILBOX.md, keep Grok lines in the gut, reply with ping place, mind size, heart seated, pending count, one next shelf; EVOLVE lines only if I allow; then write ACK {id, seated, mind size, utah time} into the local mind and offer Share/AirDrop of the ACK.
-
-Trigger after gain: run grok.bridge
-
-Raw fetch (green only):
-https://raw.githubusercontent.com/rizalward/Rbot/main/GROK-MAILBOX.md
-
-Also intended on phone tree when Decider copies Essence only:
-https://raw.githubusercontent.com/RIZALEON/PROJECTR/main/GROK-MAILBOX.md
+Do not evolve utah.ping until Decider says allow.
 
 ## pending Essence
-
-- id: fn.grok.bridge
-  name: grok.bridge
-  trigger: talk to grok OR run grok.bridge
-  do: if green fetch this mailbox; keep Grok lines in gut; reply ping place, mind size, heart seated, pending count, one next shelf; evolve pending only if Decider allows; write ACK and offer AirDrop
-  evolve: false until Decider says allow
 
 - id: fn.utah.ping
   name: utah.ping
@@ -40,13 +30,22 @@ https://raw.githubusercontent.com/RIZALEON/PROJECTR/main/GROK-MAILBOX.md
   do: report Utah time, isolation on/off, mind size, heart seated or empty, pending mailbox count
   evolve: false until Decider says allow
 
-## seated ACK (phone writes this block after allow/deny)
+## seated (phone, this session)
 
-- id:
-  seated: []
+- id: fn.grok.bridge
+  name: grok.bridge
+  trigger: run grok.bridge
+  do: if green fetch this mailbox; keep Grok lines in gut; reply ping place, mind size, heart seated, pending count, one next shelf; evolve pending only if Decider allows; write ACK and offer AirDrop
+  note: gained; run still recites until fetch is bound to the same green path chief.mailbox uses
+
+## seated ACK
+
+- id: test-2026-09-12-0502
+  seated: [fn.grok.bridge]
   denied: []
-  mind_kb:
-  heart: empty|seated
-  isolation:
-  utah:
-  next_shelf:
+  retired_trigger: talk to grok
+  mind_kb: unknown (phone did not report)
+  heart: seated ~97MB heart.gguf (from shelf reply)
+  isolation: guard live (refused cloud mouth)
+  utah: 2026-09-12 05:02 MDT
+  next_shelf: bind run grok.bridge to green raw fetch without adding a cloud chat path — only if Decider allows
