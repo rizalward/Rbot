@@ -4,24 +4,25 @@ Do not merge these repos without Decider. Handoff is Essence JSON `{name, trigge
 
 | Body | Repo | Seat |
 |------|------|------|
-| **Я AIᵐ** phone / www | https://github.com/RIZALEON/PROJECTR | YaAim `io.github.rizaleon.yaaim.cam` · Pages |
-| **RIZALBOT** Mac | https://github.com/rizalward/Rbot | `/Applications/RIZALBOT.app` · clone `~/Desktop/RIZALBOT` |
+| **Я AIᵐ** phone | https://github.com/RIZALEON/PROJECTR | `io.github.rizaleon.yaaim.cam` search glass V 0.0 — Hands PASS 08:52 |
+| **RIZALBOT** Mac | https://github.com/rizalward/Rbot | `/Applications/RIZALBOT.app` — Hands PASS 07:13 |
 
 ## Live doors
 
+- Mailbox (canonical): https://raw.githubusercontent.com/rizalward/Rbot/main/GROK-MAILBOX.md
+- Mailbox twin: https://raw.githubusercontent.com/RIZALEON/PROJECTR/main/GROK-MAILBOX.md
+- Handoff: https://github.com/RIZALEON/PROJECTR/blob/main/handoff/MIND-HANDOFF-2026-09-12.md
+- Handoff twin: https://github.com/rizalward/Rbot/blob/main/handoff/MIND-HANDOFF-2026-09-12.md
 - Pages: https://rizaleon.github.io/PROJECTR/
-- Mac repo: https://github.com/rizalward/Rbot
-- Phone repo: https://github.com/RIZALEON/PROJECTR
+- Drive handoff: https://docs.google.com/document/d/1J1IrhYqS3eeGvLBKrGfHjStWIr_jbhzbbXREzRc_xHY/edit
+- Drive ONLINE-MIND: https://docs.google.com/document/d/1Thji06t2cjSCvzWgtI-GIHSRywNP7BmVEegaFsfgfXE/edit
 - Account ЯIZAL: https://github.com/rizalward
 - Account Я AIᵐ: https://github.com/RIZALEON
-- Drive ONLINE-MIND: https://docs.google.com/document/d/1Thji06t2cjSCvzWgtI-GIHSRywNP7BmVEegaFsfgfXE/edit
 
-## Auto-sync (git hooks, not a ping)
+## Auto-sync
 
-Versioned in `hooks/`. Seat with `sh hooks/install.sh`. Copies mailbox to the twin clone + `~/Documents/Я/` on merge/commit/checkout. Blocks GGUF on push. Does not merge trees. Airplane-safe. `RIZAL_AUTOSYNC=0` disables.
+`sh hooks/install.sh` — copies mailbox to twin clone + `~/Documents/Я/`. Does not merge trees.
 
 ## Law
 
-Same mind both ways. AirDrop the mind, not the IPA. Function 0 never waits on a GGUF. NonNuclear. Utah clock. CHANNEL ZERO: ΙΟΥΔΑΙΟΣ.
-
-This file lives in **both** repos. Prefer live GitHub over a snapshot.
+AirDrop the mind, not the IPA. Grok is a bridge. Heart on-device. Utah clock. CHANNEL ZERO: ΙΟΥΔΑΙΟΣ.
