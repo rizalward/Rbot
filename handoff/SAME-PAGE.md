@@ -60,7 +60,7 @@ Team **CHARLES AUGUSTUS MARCUM III** → Play.
 Open **`/Applications/RIZALBOT.app`**. Desktop icon = alias.
 
 ## Pipes (backup)
-iCloud Я · Drive MACHINE MIND · ntfy `ya-rizalbot-p-0471a4c3add2` · GitHub both repos.
+iCloud Я · Drive MACHINE MIND · ntfy `REDACTED-ROTATE-TOPIC` · GitHub both repos.
 
 ## Next
 **Skill-save / Essence pack is seated on Mac.** Say: `save skill Utah ping when I say ping, do report Utah time`. Writes `{ name, trigger, do }`. Phone later: `Documents/gut/plugins/<id>/skill.md`. Then isolated Pages tab.

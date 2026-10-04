@@ -14,7 +14,7 @@ Bundle: `io.github.rizaleon.yaaim.cam`
 ## Shared houses (dump twins — not the seat)
 - iCloud Я: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
 - Drive MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
-- ntfy IN: https://ntfy.sh/ya-rizalbot-p-0471a4c3add2
+- ntfy IN: https://ntfy.sh/REDACTED-ROTATE-TOPIC
 - GitHub: https://github.com/RIZALEON/PROJECTR
 - Grok Bot card (quiet): https://x.ai/bot/Af9XNmozBcRoZM85eylOW
 - X: https://x.com/RizaltheGhost

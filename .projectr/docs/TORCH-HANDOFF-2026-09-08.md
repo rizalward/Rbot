@@ -23,7 +23,7 @@ sign: RIZALBOT🤖
 | Live seat | On My iPhone → Я | Premium |
 | iCloud twin | https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g | Dump/sync READ_WRITE |
 | Drive mailbox | https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7 | Bots dump |
-| ntfy IN | https://ntfy.sh/ya-rizalbot-p-0471a4c3add2 | Interact when green |
+| ntfy IN | https://ntfy.sh/REDACTED-ROTATE-TOPIC | Interact when green |
 | Grok Bot | https://x.ai/bot/Af9XNmozBcRoZM85eylOW | Card only — quiet |
 | GitHub | https://github.com/RIZALEON/PROJECTR | Code · tip 46fa330 PR#10 |
 | X | https://x.com/RizaltheGhost | Continuity handle |

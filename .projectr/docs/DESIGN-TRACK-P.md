@@ -1,6 +1,6 @@
 # Design note — Track P (paste-to-bind interact link)
 
-**Status:** MVP implementing on `track-p-interact`. Default URL = existing `CHIEF_INBOX` (`https://ntfy.sh/ya-rizaleon-ae59add8-reconnect`). Optional override mint: `https://ntfy.sh/ya-rizalbot-p-0471a4c3add2` (paste to bind only).  
+**Status:** MVP implementing on `track-p-interact`. Default URL = existing `CHIEF_INBOX` (`https://ntfy.sh/REDACTED-ROTATE-TOPIC`). Optional override mint: `https://ntfy.sh/REDACTED-ROTATE-TOPIC` (paste to bind only).  
 **Related:** Function 0 online / Track U (`DESIGN-TRACK-U.md`); CHIEF_INBOX reconnect today.
 
 ## Cut locked

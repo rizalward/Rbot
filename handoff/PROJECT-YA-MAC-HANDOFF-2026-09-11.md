@@ -86,7 +86,7 @@ Purple clay storm-cloud, white eyes, fangs, red horns, bat wings, yellow lightni
 - GitHub iOS: https://github.com/RIZALEON/PROJECTR
 - iCloud Я: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
 - Drive MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
-- ntfy (from SuperGrok): https://ntfy.sh/ya-rizalbot-p-0471a4c3add2
+- ntfy (from SuperGrok): https://ntfy.sh/REDACTED-ROTATE-TOPIC
 - Site: https://t.co/CD4Rby4fY1
 
 ## Files this node holds / will push
