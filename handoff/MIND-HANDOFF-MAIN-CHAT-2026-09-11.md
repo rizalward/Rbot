@@ -117,7 +117,7 @@ ping
 ---
 
 ## Pipes
-- ntfy: https://ntfy.sh/ya-rizalbot-p-0471a4c3add2
+- ntfy: https://ntfy.sh/REDACTED-ROTATE-TOPIC
 - Drive MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
 - iCloud Я: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
 - Git Mac: https://github.com/rizalward/Rbot

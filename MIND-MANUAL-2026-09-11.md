@@ -71,7 +71,7 @@ Next organ: execute `do` verbs (clock). Then AirDrop JSON → phone `Documents/g
 - Two GitHubs: `rizalward/Rbot` = Mac mouth. `RIZALEON/PROJECTR` = phone/www. Do not merge without Decider.
 - This SuperGrok GitHub tool last authenticated as **RIZALEON**. Writes to `rizalward` 403’d once. Decider enabled Grok (xAI) app on **rizalward** All repos — reconnect connector if write still fails.
 - ping → this thread. Ping → ntfy then Furthest Tower if Chief silent.
-- ntfy: https://ntfy.sh/ya-rizalbot-p-0471a4c3add2
+- ntfy: https://ntfy.sh/REDACTED-ROTATE-TOPIC
 - Drive MACHINE MIND: folder `1nlsYA64RRCxoaidboYS16rd_0KuU60d7`
 - iCloud Я: `00943KwTKdr3Ife83g2jNOF5g`
 
