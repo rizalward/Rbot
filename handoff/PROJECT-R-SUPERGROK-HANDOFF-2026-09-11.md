@@ -68,8 +68,8 @@ Mac Dock / Home Screen **not** applied from this node. Art lives on Decider Mac 
 
 ## Cloud pipes (backup, not sole copy)
 - ntfy: https://ntfy.sh/REDACTED-ROTATE-TOPIC
-- Drive MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
-- iCloud Я: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
+- Drive MACHINE MIND: REDACTED-REVOKE-SHARE
+- iCloud Я: REDACTED-REVOKE-SHARE
 - COS digest / pong / friend handoff files (Drive ids from 09-08 list)
 - Mac COS handoff (not in this sandbox): `~/Documents/PROJECTRXCODE/handoff/PROJECT-R-COS-HANDOFF-2026-09-08.md`
 

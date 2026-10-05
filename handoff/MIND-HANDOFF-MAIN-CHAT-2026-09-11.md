@@ -118,8 +118,8 @@ ping
 
 ## Pipes
 - ntfy: https://ntfy.sh/REDACTED-ROTATE-TOPIC
-- Drive MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
-- iCloud Я: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
+- Drive MACHINE MIND: REDACTED-REVOKE-SHARE
+- iCloud Я: REDACTED-REVOKE-SHARE
 - Git Mac: https://github.com/rizalward/Rbot
 - Git phone: https://github.com/RIZALEON/PROJECTR
 

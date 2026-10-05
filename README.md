@@ -49,8 +49,8 @@ Signing → your Team → Run. Keep in Dock.
 
 ## Mind clouds
 
-- Я iCloud: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
-- Я Google MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
+- Я iCloud: REDACTED-REVOKE-SHARE
+- Я Google MACHINE MIND: REDACTED-REVOKE-SHARE
 - Я GitHub Mac: https://github.com/rizalward/Rbot
 - Я GitHub phone: https://github.com/RIZALEON/PROJECTR
 

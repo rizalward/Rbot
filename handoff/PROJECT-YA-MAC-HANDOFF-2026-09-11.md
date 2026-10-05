@@ -84,8 +84,8 @@ Purple clay storm-cloud, white eyes, fangs, red horns, bat wings, yellow lightni
 ## Cloud pipes (backup, not sole copy)
 - GitHub Mac: https://github.com/rizalward/Rbot
 - GitHub iOS: https://github.com/RIZALEON/PROJECTR
-- iCloud Я: https://www.icloud.com/iclouddrive/00943KwTKdr3Ife83g2jNOF5g
-- Drive MACHINE MIND: https://drive.google.com/drive/folders/1nlsYA64RRCxoaidboYS16rd_0KuU60d7
+- iCloud Я: REDACTED-REVOKE-SHARE
+- Drive MACHINE MIND: REDACTED-REVOKE-SHARE
 - ntfy (from SuperGrok): https://ntfy.sh/REDACTED-ROTATE-TOPIC
 - Site: https://t.co/CD4Rby4fY1
 
